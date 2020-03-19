@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+div,
+nav,
+section,
+p,
+h1,
+h2 {
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 2em;
+  font-size: 1.2em;
+}
+
+nav * {
+  font-size: 1.2em;
+}
+
+nav {
+  margin-bottom: 2em;
+  background: #c8c8c8;
+}
+
+.gallery-container {}
+
+.hidden {
+  display: none;
+}
+
+#lightbox_container {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #bbbe;
+}
+
+#lightbox_close {
+  border-radius: 5px;
+}
+
+#lightbox_close:hover {
+  background: #b11;
+  transition: 1s;
+
+}
+
+#lightbox-head {
+  display: flex;
+  flex-direction: row-reverse;
+  min-height: 3em;
+  vertical-align: middle;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#lightbox_close {
+  color: #a00;
+  font-weight: bolder;
+}
+
+#lightbox_title {
+  text-transform: capitalize;
+}
+
+#lightbox_full_img,
+#details,
+#ListeCommentaires {
+  width: calc(100% - 2em);
+  padding: 1em;
+}
+
+#lightbox_container div,
+#lightbox_container {
+  width: 100%;
+}
+
+
+.vignette {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #777;
+  max-width: 350px;
+  background-color: #bbb;
+}
+
+.vignette img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.vignette div {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#photobox-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+button:active {
+  background: #a00;
+}
+
+button {
+  padding: 0.5em;
+  border-radius: 5px;
+  text-transform: uppercase
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+nav button {
+  min-width: 150px;
+}
+
+.grandTxt {
+  font-weight: bold;
+  color: #a00
+}
+
+#commentaires {}
+
+.scroll {
+  overflow: auto;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+#details div {
+  width: 50%;
+  min-width: 200px;
+  margin: 1em 0 0.3em 0;
+  line-height: 1.2;
+  padding: 0.5em;
+}
+
+#details>div:nth-child(4n+1),
+#details>div:nth-child(4n+2) {
+  background: #8889;
+}
+
+
+#details>div:nth-child(4n+3),
+#details>div:nth-child(4n+4) {
+  background: #8883;
+
+}
+
+
+#details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Description {
+  font-weight: bold;
+  padding-left: 3em;
+}
+
+i {
+  color: rgb(4, 142, 99);
+}
+
+nav>div {
+  max-width: 40vw;
+}
+
+.PseudoCommentaire {
+  margin-bottom: 0.5em;
+}
+
+.TitreCommentaire {
+  font-weight: 700;
+  text-align: center;
+  font-size: larger;
+  margin-bottom: 2em;
+}
+
+.DateCommentaire {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.commentaire {
+  margin: 1em 0;
+  background: #8889;
+  padding: 0.5em;
+}
+
+.change {
+  position: absolute;
+  top: 30%;
+  padding: 1em 0;
+  background: #00bb80;
+  font-weight: bolder;
+  width: 1em;
+  color: #fff;
+}
+
+.change:hover {
+  width: 5em;
+  transition: 1s;
+  background: rgb(0, 122, 90);
+}
+
+.change:active {
+  transition: 0.1s;
+  background: #08b;
+}
+
+.left {
+  left: 0;
+  border-radius: 0 15px 15px 0;
+}
+
+.right {
+  right: 0;
+  border-radius: 15px 0 0 15px;
+}
+
+.block {
+  display: block;
+}
+
+#form {
+  max-width: calc(100% - 2em);
+  margin: 1em;
+  background: #0006;
+  padding: 1em;
+}
+
+#form div {
+  width: calc(100% - 2em);
+  margin: 0.5em;
+}
+
+#form input {
+  width: 95%;
+  background: #fff3;
+  padding: 1em;
+  border-radius: 5px;
+}

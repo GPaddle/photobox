@@ -1,0 +1,16 @@
+{
+  "name": "photobox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "photobox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "axios": "^0.19.2",
+    "jquery": "^3.4.1"
+  }
+}
