@@ -30,6 +30,8 @@ section {
 
 body {
   line-height: 1;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(128, 128, 128, 0.2553221117548582) 35%, rgba(255, 255, 255, 1) 100%);
 }
 
 ol,
@@ -64,18 +66,46 @@ h2 {
   box-sizing: border-box;
 }
 
-nav {
+nav,
+footer {
   padding: 2em;
   font-size: 1.2em;
+  margin-bottom: 2em;
+  background: #c8c8c844;
+
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.darkTheme a:hover{
+  color: #a00;    
+  transition: 1s;
+}
+
+a:hover{
+  color: #0b8;
+  transition: 1s;
+}
+
+footer {
+  width: auto;
+  margin: 0;
+}
+
+footer>div {
+  width: calc(50% - 2em);
+  margin: 1em;
 }
 
 nav * {
   font-size: 1.2em;
-}
-
-nav {
-  margin-bottom: 2em;
-  background: #c8c8c8;
 }
 
 .gallery-container {}
@@ -137,9 +167,9 @@ nav {
 .vignette {
   margin: 1em;
   padding: 1em;
-  border: 1px solid #777;
+  border: 1px solid #7777;
   max-width: 350px;
-  background-color: #bbb;
+  background-color: #bbb7;
 }
 
 .vignette img {
@@ -168,15 +198,9 @@ button {
   text-transform: uppercase
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
 nav button {
   min-width: 150px;
+  background: #fff5;
 }
 
 .grandTxt {
@@ -264,6 +288,7 @@ nav>div {
   font-weight: bolder;
   width: 2em;
   color: #fff;
+  transition: 1s;
 }
 
 .change:hover {
@@ -308,4 +333,81 @@ nav>div {
   background: #fff3;
   padding: 1em;
   border-radius: 5px;
+}
+
+.darkTheme {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 13, 75, 1) 35%, rgba(0, 0, 0, 1) 100%);
+}
+
+#theme {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  width: 3em;
+  height: 3em;
+}
+
+#theme:active {
+  background: #08b3;
+  /* transition: 1s; */
+}
+
+.darkTheme #details>div:nth-child(4n+1),
+.darkTheme #details>div:nth-child(4n+2) {
+  background: #fff3;
+}
+
+.darkTheme #details>div:nth-child(4n+3),
+.darkTheme #details>div:nth-child(4n+4) {
+  background: #fff1;
+}
+
+
+.darkTheme .change {
+  background: #a00;
+}
+
+.darkTheme .change:hover {
+  background: rgb(226, 0, 0);
+}
+
+.darkTheme #formButton {
+  color: #000;
+}
+
+.darkTheme * {
+  color: #fff;
+}
+
+.darkTheme i {
+  color: #a00;
+}
+
+.darkTheme div#lightbox.darkTheme div#details {
+  background: transparent;
+}
+
+#theme {
+  transition: 1s;
+  background: #0002;
+  background: radial-gradient(circle, #0002);
+}
+
+.darkTheme #theme {
+  background: #fff2;
+  background: radial-gradient(circle, #fff2);
+  transition: 1s;
+}
+
+.darkTheme #theme:hover {
+  transition: 1s;
+  background: rgb(235, 167, 19);
+  background: radial-gradient(circle, rgba(235, 167, 19, 1) 4%, rgba(253, 243, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+#theme:hover {
+  transition: 1s;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 13, 75, 1) 35%, rgba(0, 0, 0, 1) 100%);
 }

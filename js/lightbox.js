@@ -269,3 +269,10 @@ export function setPrevNext(element, tableau) {
 		}
 	}
 }
+
+
+export function changeTheme() {
+
+	document.querySelector("#lightbox").classList.toggle("darkTheme");
+
+}

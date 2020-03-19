@@ -24,7 +24,9 @@ function init() {
 	document.querySelector("#taille").addEventListener("input", function () { 
 		gallery.changeTaille(document.querySelector("#taille").value) 
 	});
-
+	
+	document.querySelector("#theme").addEventListener("click", gallery.changeTheme);
+	document.querySelector("#theme").addEventListener("click", LB.changeTheme);
 
 
 

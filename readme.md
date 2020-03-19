@@ -43,6 +43,7 @@ Le serveur WebEtu ne laissant pas l'accès aux requêtes POST depuis les réseau
 ### Fonctionnalité(s) supplémentaire(s) :
 
 - Choix de la taille des miniatures
+- Thème sombre disponible
 
 
 Keller Guillaume @ IUTNC 2019-2020

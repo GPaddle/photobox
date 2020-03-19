@@ -114,3 +114,17 @@ export function changeTaille(size) {
 		element.style.width = size + "px";
 	});
 }
+
+export function changeTheme() {
+	
+	let body = document.querySelector("body");
+
+	body.classList.toggle("darkTheme");
+
+	if (body.classList.contains("darkTheme")) {
+		this.innerHTML = `<i class="far fa-sun"></i>`;
+	}else{
+		this.innerHTML = `<i class="far fa-moon"></i>`;
+	}
+
+}
