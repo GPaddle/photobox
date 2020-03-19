@@ -21,7 +21,7 @@ function init() {
 	document.querySelector("#next").addEventListener("click", gallery.nextPage);
 
 	document.querySelector("#lightbox_close").addEventListener("click", LB.close);
-	document.querySelector("#taille").addEventListener("change", function () { 
+	document.querySelector("#taille").addEventListener("input", function () { 
 		gallery.changeTaille(document.querySelector("#taille").value) 
 	});
 

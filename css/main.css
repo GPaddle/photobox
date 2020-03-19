@@ -124,8 +124,8 @@ nav {
 #lightbox_full_img,
 #details,
 #ListeCommentaires {
-  width: calc(100% - 2em);
-  padding: 1em;
+  width: calc(100% - 4vw);
+  padding: 2vw;
 }
 
 #lightbox_container div,
@@ -258,11 +258,11 @@ nav>div {
 
 .change {
   position: absolute;
-  top: 30%;
-  padding: 1em 0;
+  top: calc(100vw / 3);
+  padding: 2vw 0;
   background: #00bb80;
   font-weight: bolder;
-  width: 1em;
+  width: 2em;
   color: #fff;
 }
 
