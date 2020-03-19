@@ -1,3 +1,5 @@
+js/node_modules/
+
 # Cache files, generates by Zephir
 .temp/
 .libs/
