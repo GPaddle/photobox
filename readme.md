@@ -44,6 +44,7 @@ Le serveur WebEtu ne laissant pas l'accès aux requêtes POST depuis les réseau
 
 - Choix de la taille des miniatures
 - Thème sombre disponible
+- Mémorisation du dernier thème choisi (localStorage)
 
 
 Keller Guillaume @ IUTNC 2019-2020
