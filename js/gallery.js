@@ -116,15 +116,21 @@ export function changeTaille(size) {
 }
 
 export function changeTheme() {
-	
+
 	let body = document.querySelector("body");
 
 	body.classList.toggle("darkTheme");
 
 	if (body.classList.contains("darkTheme")) {
-		this.innerHTML = `<i class="far fa-sun"></i>`;
-	}else{
-		this.innerHTML = `<i class="far fa-moon"></i>`;
+		localStorage.setItem("theme", "dark");
+	} else {
+		localStorage.setItem("theme", "light");
+	}
+
+	if (body.classList.contains("darkTheme")) {
+		document.querySelector("#theme").innerHTML = `<i class="far fa-sun"></i>`;
+	} else {
+		document.querySelector("#theme").innerHTML = `<i class="far fa-moon"></i>`;
 	}
 
 }

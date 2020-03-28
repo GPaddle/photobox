@@ -21,13 +21,26 @@ function init() {
 	document.querySelector("#next").addEventListener("click", gallery.nextPage);
 
 	document.querySelector("#lightbox_close").addEventListener("click", LB.close);
-	document.querySelector("#taille").addEventListener("input", function () { 
-		gallery.changeTaille(document.querySelector("#taille").value) 
+	document.querySelector("#taille").addEventListener("input", function () {
+		gallery.changeTaille(document.querySelector("#taille").value)
 	});
-	
+
 	document.querySelector("#theme").addEventListener("click", gallery.changeTheme);
 	document.querySelector("#theme").addEventListener("click", LB.changeTheme);
 
 
 
+	const theme = localStorage.getItem("theme");
+
+	if (theme === "dark") {
+		if (!document.querySelector("body").classList.contains("darkTheme")) {
+			gallery.changeTheme();
+			LB.changeTheme();
+		}
+	} else {
+		if (document.querySelector("body").classList.contains("darkTheme")) {
+			gallery.changeTheme();
+			LB.changeTheme();
+		}
+	}
 }

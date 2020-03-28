@@ -100,22 +100,22 @@ function insertDatas(d) {
 
 	ajoutCommentaire.innerHTML = `
 	<div id="form">
-                    <form>
-                        <div>
-                            <input type="text" placeholder="Votre pseudo" id="formPseudo">
-                        </div>
+		<form>
+			<div>
+				<input type="text" placeholder="Votre pseudo" id="formPseudo">
+			</div>
 
-                        <div>
-                            <input type="text" placeholder="Titre de votre message" id="formTitre">
-                        </div>
-                        <div>
-                            <input type="text" placeholder="Contenu de votre message" id="formTxt">
-                        </div>
-                        <div>
-                            <button type="button" id="formButton">Envoyer</button>
-                        </div>
-                    </form>
-                </div>
+			<div>
+				<input type="text" placeholder="Titre de votre message" id="formTitre">
+			</div>
+			<div>
+				<input type="text" placeholder="Contenu de votre message" id="formTxt">
+			</div>
+			<div>
+				<button type="button" id="formButton">Envoyer</button>
+			</div>
+		</form>
+	</div>
 	`;
 
 	document.querySelector("#formButton").addEventListener("click", function () {
